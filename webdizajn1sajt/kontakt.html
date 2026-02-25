@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="sr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Kontaktirajte Auto Servis Milenijum - Zakazivanje termina i informacije">
+    <title>Kontakt - Auto Servis Milenijum</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <a href="index.html">
+                <img src="assets/images/logo.png" alt="Auto Servis Milenijum Logo">
+            </a>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html"><i class="fas fa-home"></i> Početna</a></li>
+                <li><a href="usluge.html"><i class="fas fa-wrench"></i> Usluge</a></li>
+                <li><a href="onama.html"><i class="fas fa-info-circle"></i> O nama</a></li>
+                <li><a href="autor.html"><i class="fas fa-user"></i> O autoru</a></li>
+                <li><a href="kontakt.html" class="active"><i class="fas fa-envelope"></i> Kontakt</a></li>
+                <li><a href="assets/download/sajt.zip" download><i class="fas fa-download"></i> Preuzmi sajt</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="contactSection">
+            <h2><i class="fas fa-address-book"></i> Kontaktirajte nas</h2>
+            <div class="contactBox">
+                <h3>Kontakt informacije</h3>
+                <p><i class="fas fa-phone"></i> <strong>Telefon:</strong> +381 11 234 5678</p>
+                <p><i class="fas fa-mobile-alt"></i> <strong>Mobilni:</strong> +381 64 123 4567</p>
+                <p><i class="fas fa-envelope"></i> <strong>Email:</strong> info@autoservismilenijum.rs</p>
+                <p><i class="fas fa-map-marker-alt"></i> <strong>Adresa:</strong> Bulevar Kralja Aleksandra 123, Beograd</p>
+                <p><i class="fas fa-clock"></i> <strong>Radno vreme:</strong> Ponedeljak - Petak: 08:00 - 18:00, Subota: 08:00 - 14:00</p>
+            </div>
+
+            <div class="contactForm">
+                <h3>Pošaljite nam poruku</h3>
+                <form action="#" method="post">
+                    <div class="formGroup">
+                        <label for="ime">Ime i prezime:</label>
+                        <input type="text" id="ime" name="ime" required placeholder="Unesite vaše ime i prezime">
+                    </div>
+                    <div class="formGroup">
+                        <label for="email">Email adresa:</label>
+                        <input type="email" id="email" name="email" required placeholder="vas.email@primer.com">
+                    </div>
+                    <div class="formGroup">
+                        <label for="telefon">Telefon:</label>
+                        <input type="tel" id="telefon" name="telefon" placeholder="+381 11 234 5678">
+                    </div>
+                    <div class="formGroup">
+                        <label for="usluga">Tip usluge:</label>
+                        <select id="usluga" name="usluga">
+                            <option value="">Izaberite uslugu</option>
+                            <option value="redovan-servis">Redovan servis</option>
+                            <option value="popravka">Popravka</option>
+                            <option value="dijagnostika">Dijagnostika</option>
+                            <option value="ostalo">Ostalo</option>
+                        </select>
+                    </div>
+                    <div class="formGroup">
+                        <label for="poruka">Poruka:</label>
+                        <textarea id="poruka" name="poruka" rows="5" required placeholder="Unesite vašu poruku ili pitanje..."></textarea>
+                    </div>
+                    <button type="submit" class="submitBtn"><i class="fas fa-paper-plane"></i> Pošalji poruku</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Auto Servis Milenijum | <i class="fas fa-phone"></i> +381 11 234 5678 | <i class="fas fa-envelope"></i> info@autoservismilenijum.rs</p>
+    </footer>
+</body>
+</html>

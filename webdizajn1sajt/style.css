@@ -1,0 +1,383 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+header {
+    background-color: #1a1a1a;
+    padding: 1rem 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo img {
+    height: 50px;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 2rem;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+nav ul li a:hover,
+nav ul li a.active {
+    background-color: #ff6600;
+    border-radius: 5px;
+}
+
+main {
+    min-height: calc(100vh - 150px);
+}
+
+#cover {
+    position: relative;
+    width: 100%;
+    height: 500px;
+    overflow: hidden;
+}
+
+#cover img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+#coverText {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.5);
+    padding: 2rem 3rem;
+    border-radius: 10px;
+}
+
+#coverText h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+#coverText p {
+    font-size: 1.2rem;
+}
+
+#offers,
+#services,
+#aboutSection,
+#contactSection,
+#servicesSection {
+    max-width: 1200px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+#offers h2,
+#services h2,
+#aboutSection h2,
+#contactSection h2,
+#servicesSection h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    color: #1a1a1a;
+}
+
+.offerBox,
+.serviceBox,
+.aboutBox,
+.contactBox {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.offerBox img,
+.serviceBox img,
+.aboutBox img {
+    width: 100%;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.offerBox p,
+.serviceBox p,
+.aboutBox p,
+.contactBox p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.contactBox {
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+.contactBox h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2c3e50;
+}
+
+.contactBox p {
+    text-align: left;
+    margin-bottom: 0.8rem;
+}
+
+#servicesSection {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+#servicesSection h2 {
+    grid-column: 1 / -1;
+}
+
+#servicesSection .serviceBox h3 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+footer {
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    padding: 1.5rem;
+    margin-top: 3rem;
+}
+
+
+#offers,
+#whyUs,
+#gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+}
+
+#offers h2,
+#whyUs h2,
+#gallery h2,
+#services h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+}
+
+.offerBox h3,
+.whyBox h3 {
+    text-align: center;
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: #1a1a1a;
+}
+
+.whyBox {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.whyBox img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.whyBox p {
+    font-size: 1.1rem;
+    text-align: center;
+}
+
+.galleryBox {
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.galleryBox img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    transition: transform 0.3s;
+}
+
+.galleryBox img:hover {
+    transform: scale(1.1);
+}
+
+
+/* Formular stilovi */
+.contactForm {
+    background-color: #f8f9fa;
+    padding: 2rem;
+    margin-top: 2rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contactForm h3 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #1a1a1a;
+}
+
+.formGroup {
+    margin-bottom: 1.5rem;
+}
+
+.formGroup label {
+    display: block;
+    margin-bottom: 0.5rem;
+    font-weight: 500;
+    color: #1a1a1a;
+}
+
+.formGroup input,
+.formGroup select,
+.formGroup textarea {
+    width: 100%;
+    padding: 0.8rem;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-family: 'Roboto', Arial, sans-serif;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.formGroup input:focus,
+.formGroup select:focus,
+.formGroup textarea:focus {
+    outline: none;
+    border-color: #ff6600;
+}
+
+.submitBtn {
+    width: 100%;
+    padding: 1rem;
+    background-color: #ff6600;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.submitBtn:hover {
+    background-color: #e55a00;
+}
+
+/* Ikone u naslovima */
+h2 i,
+h3 i {
+    margin-right: 0.5rem;
+    color: #ff6600;
+}
+
+/* Footer sa ikonama */
+footer p {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+footer i {
+    color: #ff6600;
+}
+
+/* Autor stranica - poboljšan dizajn */
+#authorSection {
+    max-width: 800px;
+    margin: 3rem auto;
+    padding: 0 2rem;
+}
+
+#authorSection h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 3rem;
+    color: #1a1a1a;
+}
+
+.authorBox {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 3rem;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.authorImage {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+    border: 5px solid #ff6600;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 15px rgba(255, 102, 0, 0.3);
+}
+
+.authorInfo h3 {
+    font-size: 1.8rem;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+}
+
+.authorInfo p {
+    font-size: 1.1rem;
+    color: #555;
+    margin-bottom: 1rem;
+    line-height: 1.8;
+}
+
+.authorInfo p:first-of-type {
+    color: #ff6600;
+    font-weight: 500;
+    font-size: 1.2rem;
+}
+
+
